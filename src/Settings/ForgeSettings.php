@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Forge\Settings;
 
+use Astrogoat\Forge\Actions\ForgeAction;
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
-use Astrogoat\Forge\Actions\ForgeAction;
 
 class ForgeSettings extends AppSettings
 {

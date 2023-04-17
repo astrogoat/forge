@@ -2,11 +2,11 @@
 
 namespace Astrogoat\Forge;
 
+use Astrogoat\Forge\Settings\ForgeSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Astrogoat\Forge\Settings\ForgeSettings;
 
 class ForgeServiceProvider extends PackageServiceProvider
 {

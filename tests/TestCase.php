@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Forge\Tests;
 
+use Astrogoat\Forge\ForgeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Astrogoat\Forge\ForgeServiceProvider;
 
 class TestCase extends Orchestra
 {
