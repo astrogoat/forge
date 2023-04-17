@@ -1,20 +1,20 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Astrogoat\Forge;
 
 use Helix\Lego\Apps\App;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Settings\SkeletonSettings;
+use Astrogoat\Forge\Settings\ForgeSettings;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ForgeServiceProvider extends PackageServiceProvider
 {
     public function registerApp(App $app)
     {
         return $app
-            ->name('skeleton')
-            ->settings(SkeletonSettings::class)
+            ->name('forge')
+            ->settings(ForgeSettings::class)
             ->migrations([
                 __DIR__ . '/../database/migrations',
                 __DIR__ . '/../database/migrations/settings',
@@ -32,6 +32,6 @@ class SkeletonServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name('skeleton')->hasConfigFile()->hasViews();
+        $package->name('forge')->hasConfigFile()->hasViews();
     }
 }

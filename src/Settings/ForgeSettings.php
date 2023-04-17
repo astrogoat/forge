@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Settings;
+namespace Astrogoat\Forge\Settings;
 
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
-use VendorName\Skeleton\Actions\SkeletonAction;
+use Astrogoat\Forge\Actions\ForgeAction;
 
-class SkeletonSettings extends AppSettings
+class ForgeSettings extends AppSettings
 {
     // public string $url;
 
@@ -18,7 +18,7 @@ class SkeletonSettings extends AppSettings
     }
 
     // protected static array $actions = [
-    //     SkeletonAction::class,
+    //     ForgeAction::class,
     // ];
 
     // public static function encrypted(): array
@@ -28,11 +28,11 @@ class SkeletonSettings extends AppSettings
 
     public function description(): string
     {
-        return 'Interact with Skeleton.';
+        return 'Interact with Forge.';
     }
 
     public static function group(): string
     {
-        return 'skeleton';
+        return 'forge';
     }
 }

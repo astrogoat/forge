@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Astrogoat\Forge\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ForgeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'forge';
 
     public $description = 'My command';
 
